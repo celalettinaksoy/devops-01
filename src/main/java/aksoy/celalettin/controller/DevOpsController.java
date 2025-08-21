@@ -38,4 +38,11 @@ public class DevOpsController {
         return "Version3 about: " + LocalDateTime.now();
     }
 
+
+    //    http://localhost:8080/about
+    @GetMapping("entry")
+    public String entry() {
+        return "Version3 entry: " + LocalDateTime.now();
+    }
+
 }

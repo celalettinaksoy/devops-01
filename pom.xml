@@ -10,7 +10,7 @@
     </parent>
     <groupId>aksoy.celalettin</groupId>
     <artifactId>devops-01</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.3</version>
     <name>devops-01</name>
     <description>devops-01</description>
     <url/>
