@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-01
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: devops-01
+  template:
+    metadata:
+      labels:
+        app: devops-01
+    spec:
+      containers:
+      - name: devops-01
+        image: floryos/devops-01:v001
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080   # Pod içindeki .jar uygulamanın portu
+
